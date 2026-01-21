@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { FileText, Upload, Printer, RefreshCw, Camera } from 'lucide-react'
 
 function AIErrorBookPage() {
   const [uploadedImages, setUploadedImages] = useState<string[]>([])
-  const [errorQuestions, setErrorQuestions] = useState([
+  const [errorQuestions] = useState([
     {
       id: 1,
       question: '以下哪个算法被广泛用于自然语言处理中的文本分类任务?',
@@ -24,8 +24,9 @@ function AIErrorBookPage() {
       Array.from(files).forEach(file => {
         const reader = new FileReader()
         reader.onload = (e) => {
-          if (e.target?.result) {
-            setUploadedImages(prev => [...prev, e.target.result as string])
+          const target = e.target
+          if (target?.result) {
+            setUploadedImages(prev => [...prev, target.result as string])
           }
         }
         reader.readAsDataURL(file)
@@ -33,7 +34,7 @@ function AIErrorBookPage() {
     }
   }
 
-  const handleGenerateSimilar = (questionId: number) => {
+  const handleGenerateSimilar = () => {
     // 模拟生成举一反三题目
     alert('正在生成举一反三题目...')
   }
@@ -129,7 +130,7 @@ function AIErrorBookPage() {
 
                 <div className="flex space-x-3">
                   <button
-                    onClick={() => handleGenerateSimilar(question.id)}
+                    onClick={handleGenerateSimilar}
                     className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition"
                   >
                     <RefreshCw className="w-4 h-4" />

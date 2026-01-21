@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { BookOpen, FileText, CheckCircle, XCircle } from 'lucide-react'
+import { useState } from 'react'
+import { BookOpen, FileText, CheckCircle } from 'lucide-react'
 
 const subjects = [
   { id: 'math', name: '高等数学', color: 'blue' },
@@ -48,9 +48,6 @@ function AITestPage() {
     }
   }
 
-  const handleGenerateReport = () => {
-    setShowReport(true)
-  }
 
   if (showReport) {
     return <TestReportPage 

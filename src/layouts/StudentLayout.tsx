@@ -1,4 +1,3 @@
-import React from 'react'
 import { Routes, Route, NavLink, useNavigate, Navigate as RouterNavigate } from 'react-router-dom'
 import { ArrowLeft, BookOpen, Target, FileText, ClipboardList } from 'lucide-react'
 import AITestPage from '../pages/student/AITestPage'

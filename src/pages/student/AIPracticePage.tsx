@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Target, CheckCircle, XCircle, BarChart3 } from 'lucide-react'
+import { useState } from 'react'
+import { Target, BarChart3 } from 'lucide-react'
 
 const subjects = ['高等数学', '计算机基础', '大学英语', '大学语文']
 const difficulties = ['简单', '中等', '困难']

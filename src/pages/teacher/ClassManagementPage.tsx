@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Users, Plus, Search, Edit, Trash2, Eye, Download, RefreshCw } from 'lucide-react'
+import { useState } from 'react'
+import { Plus, Search, Edit, Trash2, Eye, Download, RefreshCw } from 'lucide-react'
 
 const classes = [
   { id: 1, name: '一年级1班', grade: '1年级', teacher: '张明华', studentCount: 10, createTime: '2025-08-23' },

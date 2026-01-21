@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { UserCheck, Plus, Search, CheckCircle, XCircle, FileText, Upload } from 'lucide-react'
+import { useState } from 'react'
+import { UserCheck, Plus, CheckCircle, XCircle, FileText, Upload } from 'lucide-react'
 
 const students = [
   { id: 1, name: '张三', class: '一年级1班', progress: 85, status: 'pass' },
@@ -8,17 +8,9 @@ const students = [
 ]
 
 const subjects = ['高等数学', '计算机基础', '大学英语', '大学语文']
-const chapters = {
-  '高等数学': ['第一章 函数与极限', '第二章 导数与微分', '第三章 积分'],
-  '计算机基础': ['第一章 计算机基础', '第二章 操作系统', '第三章 数据结构'],
-  '大学英语': ['词汇学习', '语法学习', '音标学习'],
-  '大学语文': ['第一章 古代文学', '第二章 现代文学', '第三章 默写抽背'],
-}
 
 function StudentManagementPage() {
   const [activeTab, setActiveTab] = useState<'progress' | 'tasks'>('progress')
-  const [selectedSubject, setSelectedSubject] = useState('')
-  const [selectedChapter, setSelectedChapter] = useState('')
 
   return (
     <div className="space-y-6">

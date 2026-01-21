@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { GraduationCap, Plus, Search, Edit, Download, DollarSign } from 'lucide-react'
+import { useState } from 'react'
+import { Search, Download, DollarSign } from 'lucide-react'
 
 const students = [
   { id: 1, name: '张三', studentId: '2024001001', class: '一年级1班', phone: '13800138001', fee: 5000, feeStatus: 'paid' },

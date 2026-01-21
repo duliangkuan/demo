@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { FileText, Upload, Search, Edit, Trash2, Eye } from 'lucide-react'
+import { useState } from 'react'
+import { Upload, Search, Edit, Trash2, Eye } from 'lucide-react'
 
 const papers = [
   { id: 1, name: '单元复习试卷', type: '单元复习', subject: '数学', createTime: '2025-01-10' },

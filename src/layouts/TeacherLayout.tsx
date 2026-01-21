@@ -1,4 +1,3 @@
-import React from 'react'
 import { Routes, Route, NavLink, useNavigate, Navigate as RouterNavigate } from 'react-router-dom'
 import { ArrowLeft, Users, UserCheck, LayoutDashboard } from 'lucide-react'
 import ClassManagementPage from '../pages/teacher/ClassManagementPage'

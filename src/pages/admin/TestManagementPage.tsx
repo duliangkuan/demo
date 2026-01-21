@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { BookOpen, Upload, Search, Edit, Trash2 } from 'lucide-react'
+import { useState } from 'react'
+import { Upload, Search, Edit, Trash2 } from 'lucide-react'
 
 const tests = [
   { id: 1, subject: '高等数学', chapter: '第一章 函数与极限', questionCount: 20, createTime: '2025-01-10' },

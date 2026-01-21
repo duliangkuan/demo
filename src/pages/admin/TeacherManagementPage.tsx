@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Users, Plus, Search, Edit, Trash2, Download } from 'lucide-react'
+import { useState } from 'react'
+import { Plus, Search, Edit, Trash2, Download } from 'lucide-react'
 
 const teachers = [
   { id: 1, name: '张明华', email: 'zhang@example.com', phone: '13800138001', status: 'active' },
